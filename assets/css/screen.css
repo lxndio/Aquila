@@ -1,0 +1,114 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+
+@font-face {
+    font-family: CFJacquesCartier;
+    src: url(../fonts/CFJacquesCartier-Regular.ttf);
+}
+
+.page-title {
+    font-family: CFJacquesCartier;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.page-description {
+    font-family: 'Droid Serif', serif;
+    font-size: 20px;
+}
+
+hr {
+    height: 1px;
+    width: 40%;
+    border: none;
+    color: #000000;
+    background-color: #000000;
+}
+
+.content {
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.list-title {
+    font-family: 'Droid Serif', serif;
+    font-size: 32px;
+    font-weight: 700;
+    text-indent: -2px;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    text-underline: none;
+    color: #000000;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.list-article {
+    font-family: 'Droid Serif', serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 28px;
+    margin-bottom: 10px;
+}
+
+.date-and-tags {
+    font-family: 'Droid Serif', serif;
+    font-size: 15px;
+}
+
+.article {
+    margin-bottom: 25px;
+}
+
+.site-footer {
+    font-family: 'Droid Serif', serif;
+    font-size: 12px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.post-title {
+    font-family: 'Droid Serif', serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-indent: -2px;
+    letter-spacing: -1px;
+    line-height: 10px;
+}
+
+.post-header {
+    text-align: center;
+}
+
+.post-date {
+    font-family: 'Droid Serif', serif;
+    font-size: 15px;
+}
+
+.post-content {
+    font-family: 'Droid Serif', serif;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 25px;
+}
+
+.share-title {
+    font-family: 'Droid Serif', serif;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.share {
+    font-family: 'Droid Serif', serif;
+    font-size: 15px;
+}

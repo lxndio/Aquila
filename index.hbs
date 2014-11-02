@@ -1,0 +1,19 @@
+{{!< default}}
+
+<header class="main-header">
+    {{#if @blog.logo}}<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{else}}
+    <p class="page-title">{{@blog.title}}{{/if}}</p>
+    <p class="page-description">{{@blog.description}}</p>
+    <hr>
+</header>
+
+<main id="content" class="content" role="main">
+    {{#foreach posts}}
+        <div class="article">
+            <div class="list-title"><a href="{{url}}">{{title}}</a></div>
+            <div class="list-article">{{excerpt characters="200"}}...</div>
+            <div class="date-and-tags">{{date published_at format="MMMM DD, YYYY"}} {{#if tags}}in {{tags}}{{/if}}</div>
+        </div>
+    {{/foreach}}
+    {{pagination}}
+</main>
