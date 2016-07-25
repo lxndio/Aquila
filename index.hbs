@@ -2,7 +2,7 @@
 
 <header class="main-header">
     {{#if @blog.logo}}<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{else}}
-    <p class="page-title">{{@blog.title}}{{/if}}</p>
+    <p class="page-title"><a href="{{@blog.url}}" class="page-title-link">{{@blog.title}}</a>{{/if}}</p>
     <p class="page-description">{{@blog.description}}</p>
     <hr>
 </header>
@@ -10,10 +10,14 @@
 <main id="content" class="content" role="main">
     {{#foreach posts}}
         <div class="article">
-            <div class="list-title"><a href="{{url}}">{{title}}</a></div>
+            <div class="list-title"><a href="{{url}}" class="list-title-link">{{title}}</a></div>
+            <div class="date-and-tags">{{date published_at format="MMMM DD, YYYY"}} {{#if tags}}&nbsp;
+                {{#foreach tags}}
+                    <a href="{{url}}" title="{{name}}" class="tag">{{name}}</a>&nbsp;&nbsp;
+                {{/foreach}}
+            {{/if}}</div>
             <div class="list-article">{{excerpt characters="200"}}...</div>
-            <div class="date-and-tags">{{date published_at format="MMMM DD, YYYY"}} {{#if tags}}in {{tags}}{{/if}}</div>
         </div>
     {{/foreach}}
-    {{pagination}}
+    <div class="pagination">{{pagination}}</div>
 </main>

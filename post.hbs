@@ -4,7 +4,7 @@
 
 <header class="main-header">
     {{#if @blog.logo}}<a href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{else}}
-    <p class="page-title">{{@blog.title}}{{/if}}</p>
+    <p class="page-title"><a href="{{@blog.url}}" class="page-title-link">{{@blog.title}}</a>{{/if}}</p>
     <p class="page-description">{{@blog.description}}</p>
     <hr>
 </header>
@@ -14,8 +14,12 @@
     <article class="{{post_class}}">
 
         <header class="post-header">
-            <p class="post-date">{{date format="DD MMMM YYYY"}} in {{tags}}</p>
             <p class="post-title">{{title}}</p>
+            <p class="post-date">{{date published_at format="MMMM DD, YYYY"}} {{#if tags}}&nbsp;
+                {{#foreach tags}}
+                    <a href="{{url}}" title="{{name}}" class="tag">{{name}}</a>&nbsp;&nbsp;
+                {{/foreach}}
+            {{/if}}</p>
         </header>
 
         <section class="post-content">

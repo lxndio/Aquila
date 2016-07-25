@@ -1,4 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);
+/*@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400,700);*/
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400';
 
 @font-face {
     font-family: CFJacquesCartier;
@@ -6,40 +7,42 @@
 }
 
 .page-title {
-    font-family: CFJacquesCartier;
+    font-family: 'Lato', Sans-Serif;
+    font-weight: 300;
     font-size: 60px;
     margin-bottom: 20px;
 }
 
 .page-description {
-    font-family: 'Droid Serif', serif;
+    font-family: 'Lato', Sans-Serif;
+    font-weight: 300;
     font-size: 20px;
 }
 
 hr {
-    height: 1px;
-    width: 40%;
+    height: 0.8px;
+    width: 100%;
     border: none;
-    color: #000000;
-    background-color: #000000;
+    color: #dfdfdf;
+    background-color: #dfdfdf;
 }
 
 @media (max-width: 767px) {
     .content {
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 8%;
+        padding-right: 8%;
     }
 }
 @media (min-width: 768px) and (max-width: 1279px) {
     .content {
-        padding-left: 20%;
-        padding-right: 20%;
+        padding-left: 18%;
+        padding-right: 18%;
     }
 }
 @media (min-width: 1280px) {
     .content {
-        padding-left: 30%;
-        padding-right: 30%;
+        padding-left: 28%;
+        padding-right: 28%;
     }
 }
 
@@ -49,35 +52,54 @@ hr {
 }
 
 .list-title {
-    font-family: 'Droid Serif', serif;
+    font-family: 'Lato', Sans-Serif;
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 400;
     text-indent: -2px;
     letter-spacing: -1px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 a {
     text-decoration: none;
     text-underline: none;
-    color: #000000;
+    color: #1ab09c;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
+.page-title-link {
+    color: #000000;
+}
+
+.list-title-link {
+    color: #000000;
+}
+
+.footer-link {
+    color: #000000;
+}
+
 .list-article {
-    font-family: 'Droid Serif', serif;
-    font-size: 18px;
+    font-family: 'Lato', Sans-Serif;
+    font-size: 19px;
+    font-weight: 300;
     text-align: justify;
     line-height: 28px;
-    margin-bottom: 10px;
 }
 
 .date-and-tags {
-    font-family: 'Droid Serif', serif;
-    font-size: 15px;
+    font-family: 'Lato', Sans-Serif;
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #afafaf;
+}
+
+.tag {
+    color: #afafaf;
 }
 
 .article {
@@ -85,19 +107,18 @@ a:hover {
 }
 
 .site-footer {
-    font-family: 'Droid Serif', serif;
-    font-size: 12px;
+    font-family: 'Lato', Sans-Serif;
+    font-size: 13px;
+    font-weight: 300;
     margin-top: 50px;
     text-align: center;
 }
 
 .post-title {
-    font-family: 'Droid Serif', serif;
+    font-family: 'Lato', Sans-Serif;
     font-size: 42px;
-    font-weight: 700;
+    font-weight: 300;
     text-indent: -2px;
-    letter-spacing: -1px;
-    margin-top: 20px;
 }
 
 .post-header {
@@ -105,24 +126,37 @@ a:hover {
 }
 
 .post-date {
-    font-family: 'Droid Serif', serif;
-    font-size: 15px;
+    font-family: 'Lato', Sans-Serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: -35px;
+    color: #afafaf;
 }
 
 .post-content {
-    font-family: 'Droid Serif', serif;
-    font-size: 18px;
-    text-align: justify;
+    font-family: 'Lato', Sans-Serif;
+    font-weight: 300;
+    font-size: 19px;
+    /*text-align: justify;*/
     margin-bottom: 25px;
 }
 
 .share-title {
-    font-family: 'Droid Serif', serif;
-    font-size: 15px;
-    font-weight: 700;
+    font-family: 'Lato', Sans-Serif;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
 }
 
 .share {
-    font-family: 'Droid Serif', serif;
-    font-size: 15px;
+    font-family: 'Lato', Sans-Serif;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pagination {
+    font-family: 'Lato', Sans-Serif;
+    font-weight: 300;
+    font-size: 19px;
+    text-align: center;
 }
