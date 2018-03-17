@@ -160,3 +160,10 @@ a:hover {
     font-size: 19px;
     text-align: center;
 }
+
+img {
+    position: relative;
+    width: 100%;
+    left: 50%;
+    margin-left: -50%;
+}
